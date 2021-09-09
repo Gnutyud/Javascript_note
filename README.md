@@ -1,8 +1,8 @@
 # Javascript_note
 Note some helpful piece of code in javascript.
 My list :
-- [Minimum number of bottles required to fill K glasses](#Minimum number of bottles required to fill K glasses)
-- [Shortest substring occurring only once in a given string](#Shortest substring occurring only once in a given string)
+- [Minimum number of bottles required to fill K glasses](#minimum-number-of-bottles-required-to-fill-k-glasses)
+- [Shortest substring occurring only once in a given string](#shortest-unique-substring-occurring-only-once-in-a-given-string)
 ##  Minimum number of bottles required to fill K glasses
 There are N empty glasses with a capacity of 1,2,…,N liters(there is exactly one glass of each unique capacity)
 You want to pour exactly K liters of water into glasses.
@@ -30,8 +30,8 @@ function minimumGlasses(N, K) {
 }
 console.log(minimumGlasses(5, 8));
 ```
-## Shortest substring occurring only once in a given string
-Given a string S consisting of N lowercase alphabets, the task is to find the length of the smallest substring in S whose occurrence is exactly 1.
+## Shortest unique substring occurring only once in a given string
+Given a string S consisting of N lowercase alphabets, the task is to find the length of the shortest unique substring in S whose occurrence is exactly 1.
 ```js
 function uniqueShortestSubString(string) {
   let str = string.toLowerCase();
