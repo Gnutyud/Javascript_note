@@ -147,6 +147,7 @@ function isAPath(arr1, arr2, N) {
 ```
 ## Get search results from the save contacts for the number you entered
 Task Description:
+
 When you open the dialer of your phone and start typing a number, you will probably get search results from the save contacts for the number you entered. Your task is to implement a similar feature.
 Saved contacts are numbered from 0 to N-1. They are represented by two arrays A,B of N strings each. Name of K-th contact is A[K] and phone number is B[K].
 Write a function
@@ -156,8 +157,8 @@ If there is more than one contact matching the search criteria, your function sh
 If no match is found, your function should return “NO CONTACT”.
 
 Examples:
-Given A = [“pim”, “pom”], B = [“999999999”, “777888999”] and P = “88999”, your function should return “pom”, because only pom’s phone number contains “88999”.
 
+Given A = [“pim”, “pom”], B = [“999999999”, “777888999”] and P = “88999”, your function should return “pom”, because only pom’s phone number contains “88999”.
 Given A = [“sander”, “amy”, “ann”, “michael”], B = [“123456789”, “234567890”, “789123456”, ‘“123123123”’] and P = “1”, your function should return “ann”. Note that sander, ann and michael’s phone number contain “1” but “ann” is alphabetically smaller.
 ```js
 function findcontactList(nameArr, numberArr, searchStr) {
