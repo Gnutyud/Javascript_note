@@ -7,7 +7,7 @@ Some helpful piece of code in javascript of mine :
 - [Get search results from the save contacts for the number you entered](#get-search-results-from-the-save-contacts-for-the-number-you-entered)
 - [Count of different numbers divisible by 3 that can be obtained by changing at most one digit](#count-of-different-numbers-divisible-by-3-that-can-be-obtained-by-changing-at-most-one-digit)
 ##  Minimum number of bottles required to fill K glasses
-There are N empty glasses with a capacity of 1,2,…,N liters(there is exactly one glass of each unique capacity)
+- There are N empty glasses with a capacity of 1,2,…,N liters(there is exactly one glass of each unique capacity)
 You want to pour exactly K liters of water into glasses.
 Each glass may be either full or empty(a glass cannot be partially filled).
 What is the minimum number of glasses that you need to contain K liters of water?
@@ -34,7 +34,7 @@ function minimumGlasses(N, K) {
 console.log(minimumGlasses(5, 8));
 ```
 ## Shortest unique substring occurring only once in a given string
-Given a string S consisting of N lowercase alphabets, the task is to find the length of the shortest unique substring in S whose occurrence is exactly 1.
+- Given a string S consisting of N lowercase alphabets, the task is to find the length of the shortest unique substring in S whose occurrence is exactly 1.
 ```js
 function uniqueShortestSubString(string) {
   let str = string.toLowerCase();
@@ -64,7 +64,7 @@ function uniqueShortestSubString(string) {
   }
   ```
 ## Minimum number of steps required to make all elements equal in array
-Any element of a given array can be either increased or decreased by 1.
+- Any element of a given array can be either increased or decreased by 1.
 ```js
 function makeAllEqual(arr) {
   let countStep = 0;
@@ -99,7 +99,7 @@ function makeAllEqual(arr) {
 }
 ```
 ## Is there exists a path from vertex 1 to N going through all vertices in an undirected graph
-You are given an undirected graph consisting of N vertices, numbered from 1 to N, and M edges. The graph is described by two arrays, A and B, both of length M. A pair (A[K], B[K]), for K from 0 to M-1, describes an edge between vertex A[K] and vertex B[K]. Your task is to check whether the given graph contains a path from vertex 1 to vertex N going through all of the vertices, one by one, in increasing order of their numbers. All connections on the path should be direct.
+- You are given an undirected graph consisting of N vertices, numbered from 1 to N, and M edges. The graph is described by two arrays, A and B, both of length M. A pair (A[K], B[K]), for K from 0 to M-1, describes an edge between vertex A[K] and vertex B[K]. Your task is to check whether the given graph contains a path from vertex 1 to vertex N going through all of the vertices, one by one, in increasing order of their numbers. All connections on the path should be direct.
 ```js
 function isAPath(arr1, arr2, N) {
   let allVector = [];
@@ -148,7 +148,7 @@ function isAPath(arr1, arr2, N) {
 ## Get search results from the save contacts for the number you entered
 Task Description:
 
-When you open the dialer of your phone and start typing a number, you will probably get search results from the save contacts for the number you entered. Your task is to implement a similar feature.
+- When you open the dialer of your phone and start typing a number, you will probably get search results from the save contacts for the number you entered. Your task is to implement a similar feature.
 Saved contacts are numbered from 0 to N-1. They are represented by two arrays A,B of N strings each. Name of K-th contact is A[K] and phone number is B[K].
 Write a function
 class Solution { public String solution(String[] A, String[] B, String P); }
@@ -158,8 +158,9 @@ If no match is found, your function should return “NO CONTACT”.
 
 Examples:
 
-Given A = [“pim”, “pom”], B = [“999999999”, “777888999”] and P = “88999”, your function should return “pom”, because only pom’s phone number contains “88999”.
-Given A = [“sander”, “amy”, “ann”, “michael”], B = [“123456789”, “234567890”, “789123456”, ‘“123123123”’] and P = “1”, your function should return “ann”. Note that sander, ann and michael’s phone number contain “1” but “ann” is alphabetically smaller.
+- Given A = [“pim”, “pom”], B = [“999999999”, “777888999”] and P = “88999”, your function should return “pom”, because only pom’s phone number contains “88999”.
+
+- Given A = [“sander”, “amy”, “ann”, “michael”], B = [“123456789”, “234567890”, “789123456”, ‘“123123123”’] and P = “1”, your function should return “ann”. Note that sander, ann and michael’s phone number contain “1” but “ann” is alphabetically smaller.
 ```js
 function findcontactList(nameArr, numberArr, searchStr) {
   let contactList = [];
@@ -176,7 +177,7 @@ function findcontactList(nameArr, numberArr, searchStr) {
 }
 ```
 ## Count of different numbers divisible by 3 that can be obtained by changing at most one digit
-Given a string str[] number N, the task is to calculate the number of ways to make the given number divisible by 3 by changing at most one digit of the number.
+- Given a string str[] number N, the task is to calculate the number of ways to make the given number divisible by 3 by changing at most one digit of the number.
 ```js
 function numbersDivisibleBy3(str) {
   function totalNum(arr) {
