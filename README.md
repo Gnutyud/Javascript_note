@@ -154,8 +154,10 @@ class Solution { public String solution(String[] A, String[] B, String P); }
 which, given two arrays A and B and a string P of length M representing a partial phone number, returns the contact name whose phone number contains P as a substring, that is a contiguous segment (for example, “436800143” contains as a substring “6800”, but not “3614”).
 If there is more than one contact matching the search criteria, your function should return the alphabetically smallest contact name.
 If no match is found, your function should return “NO CONTACT”.
+
 Examples:
 Given A = [“pim”, “pom”], B = [“999999999”, “777888999”] and P = “88999”, your function should return “pom”, because only pom’s phone number contains “88999”.
+
 Given A = [“sander”, “amy”, “ann”, “michael”], B = [“123456789”, “234567890”, “789123456”, ‘“123123123”’] and P = “1”, your function should return “ann”. Note that sander, ann and michael’s phone number contain “1” but “ann” is alphabetically smaller.
 ```js
 function findcontactList(nameArr, numberArr, searchStr) {
@@ -169,7 +171,7 @@ function findcontactList(nameArr, numberArr, searchStr) {
       let textA = a.name.toUpperCase();
       let textB = b.name.toUpperCase();
       return textA < textB ? -1 : textA > textB ? 1 : 0;
-    })[0].name;
+    })[0].name || "NO CONTACT";
 }
 ```
 ## Count of different numbers divisible by 3 that can be obtained by changing at most one digit
